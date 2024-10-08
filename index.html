@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exercise</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+    <h1 id="myh1"> My shop </h1>
+
+   
+</header>
+    <main>  <div id="buttonsdiv"> 
+        <button onclick="changeTitle()"> Change title </button>
+    <button onclick="changeBackground('#c485dd')"> Change background color </button>
+    <button onclick="newClass()">Change links style</button>
+    <button onclick=" changeimgstyle()">Change img style</button>
+    <button onclick="changePriceColor ()">Change price color</button>
+    <button onclick="changeAddress()"> Change Address</button>
+    </div>
+
+
+    <table>
+<tr><td id="titletd"> <h2>Today's top picks</h2></td></tr>
+        <tr><td> <span> Apple iPhone </span> <br> Scatta ritratti ancora più dettagliati e con colori più intensi. Inoltre puoi spostare la messa a fuoco su un altro soggetto, anche dopo aver scattato: basta un tap. <span class="price" >$719 </span> <br> <a class="link" href="https://www.amazon.it/Apple-iPhone-15-128-GB/dp/B0CHWWNY6F?ref_=Oct_d_omg_d_473246031_3&pd_rd_w=hThAH&content-id=amzn1.sym.b18cdea2-0480-404b-8703-e299b1e7c676&pf_rd_p=b18cdea2-0480-404b-8703-e299b1e7c676&pf_rd_r=JQ60AB5KXXHG93M3ZVX1&pd_rd_wg=kZZin&pd_rd_r=a4a0dcf5-83a5-4d0d-9627-9b58c0525161&pd_rd_i=B0CHWWNY6F" target="_blank"> Buy it now </a> <br> <input type="text" placeholder="Insert your feedback here...."></td><td><img class="imgStyle" src="Assets/pink iphone.jpg"/></td></tr>
+
+        <tr><td><span> Samsung Galaxy A25 5G </span> <br>Smartphone Android 14, Display Super AMOLED 6.5" FHD+, 6GB RAM, 128GB, memoria interna espandibile fino a 1TB, Batteria 5.000 mAh, Blue Black  <span class="price"> $187</span> <a class="link" href="https://www.amazon.it/Samsung-Smartphone-espandibile-Batteria-Versione/dp/B0CN12BMRW?ref_=Oct_d_omg_d_473246031_1&pd_rd_w=hThAH&content-id=amzn1.sym.b18cdea2-0480-404b-8703-e299b1e7c676&pf_rd_p=b18cdea2-0480-404b-8703-e299b1e7c676&pf_rd_r=JQ60AB5KXXHG93M3ZVX1&pd_rd_wg=kZZin&pd_rd_r=a4a0dcf5-83a5-4d0d-9627-9b58c0525161&pd_rd_i=B0CN12BMRW" target="_blank"> <br> Buy it now</a>  <br> <input type="text" placeholder="Insert your feedback here...."> </td><td><img class="imgStyle" src="Assets/samsung.jpg"/></td></tr>
+
+        <tr><td><span> Apple iPhone 16  </span> <br> 128 GB: Telefono 5G con Controllo fotocamera, chip A18 e tanta autonomia in più. Compatibile con AirPods; Nero <span class="price"> 979$</span> <br> <a class="link" href="https://www.amazon.it/Apple-iPhone-128-fotocamera-Compatibile/dp/B0DGJJXBM5?ref_=Oct_d_onr_d_473246031_3&pd_rd_w=X2ybM&content-id=amzn1.sym.14c62357-045e-45bc-98d5-a1e74057a910&pf_rd_p=14c62357-045e-45bc-98d5-a1e74057a910&pf_rd_r=JQ60AB5KXXHG93M3ZVX1&pd_rd_wg=kZZin&pd_rd_r=a4a0dcf5-83a5-4d0d-9627-9b58c0525161&pd_rd_i=B0DGJJXBM5" target="_blank"> Buy it now </a>  <br> <input type="text" placeholder="Insert your feedback here...."></td><td><img class="imgStyle" src="Assets/iphone.jpg"/></td></tr>
+
+        <tr><td><span> Samsung Galaxy A35 5G </span> <br> Clear Cover inclusa, Smartphone Android 14, Display FHD+ Super AMOLED 6.6”, 6GB RAM e 128GB di memoria interna espandibile, Batteria 5.000 mAh, Awesome Lilac  <span class="price"> 269$</span> <br><a class="link" href="https://www.amazon.it/Smartphone-espandibile-Batteria-Versione-Italiana/dp/B0D37GG3P7/ref=sr_1_18_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LI12RA23TRSE&dib=eyJ2IjoiMSJ9.hIzgAeFLiCFNGaStLW6Cl9tQrfs6-RV8wILOOB9jK5TwNFjKvtQPiCXsa8iZN80WiHjW-BV22_VGL6QidfsAYLQIGv38wvqFdCpHeBQ_u-Ajya7oylfJ4WDuYzhjmlKTznSnoKXN113sxLqKxatQvGK2QufnLqCTyneuPbrpi2upjcLPySz3sRRHcbrxHMmXNcEgUND8VE-ZIgMs2aXTeYVPBAqi71dcy6lVewtqDNX_lB_pd1vMEqtTgn_V2npwOF6QBQ9kWKTV1e3zX7dIfQkvhulfLYbi2dkiHVHP14I.J6G-MVE3Uz4xVLXh9aOV6fxDPdU45dZsxszZBaYyJpw&dib_tag=se&keywords=smartphone&qid=1728307151&sprefix=smartphone%2Caps%2C456&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1" target="_blank">Buy it now</a> <br> <input type="text" placeholder="Insert your feedback here...."></td><td><img class="imgStyle" src="Assets/samsung galaxy.jpg"/></td></tr>
+
+        <tr><td><span> Oppo smartphone  </span> <br>  AI Doppia Fotocamera 50+2MP, Selfie 8MP, Display 6.67” 120HZ LCD HD+, 5100mAh, RAM 16GB (8+8) +ROM 256GB (esp1TB), IP54, Supporto Auto [Versione Italia], Moonlight Purple <span class="price"> 199.99$</span> <br> <a class="link" href="https://www.amazon.it/OPPO-Smartphone-Fotocamera-Supporto-Moonlight/dp/B0DCBKB7TQ/ref=sr_1_24?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LI12RA23TRSE&dib=eyJ2IjoiMSJ9.hIzgAeFLiCFNGaStLW6Cl9tQrfs6-RV8wILOOB9jK5TwNFjKvtQPiCXsa8iZN80WiHjW-BV22_VGL6QidfsAYLQIGv38wvqFdCpHeBQ_u-Ajya7oylfJ4WDuYzhjmlKTznSnoKXN113sxLqKxatQvGK2QufnLqCTyneuPbrpi2upjcLPySz3sRRHcbrxHMmXNcEgUND8VE-ZIgMs2aXTeYVPBAqi71dcy6lVewtqDNX_lB_pd1vMEqtTgn_V2npwOF6QBQ9kWKTV1e3zX7dIfQkvhulfLYbi2dkiHVHP14I.J6G-MVE3Uz4xVLXh9aOV6fxDPdU45dZsxszZBaYyJpw&dib_tag=se&keywords=smartphone&qid=1728307244&sprefix=smartphone%2Caps%2C456&sr=8-24" target="_blank"> Buy it now</a>  <br> <input type="text" placeholder="Insert your feedback here...."></td><td><img class="imgStyle" src="Assets/Oppo.jpg"/></td></tr>
+        </table>
+    </main>
+
+
+        <footer id="myFooter"> The phone warehouse, Via Roma, Torino. </footer>
+
+
+
+<script src="script.js"> </script>
+</body>
+</html>
